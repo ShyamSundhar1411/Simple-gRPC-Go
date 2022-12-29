@@ -17,5 +17,5 @@ func main() {
 	}
 	defer connection.Close()
 	client := pb.NewGreetServiceClient(connection)
-	doLongMany(client)
+	doGreetEveryone(client)
 }
