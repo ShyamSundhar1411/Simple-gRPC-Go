@@ -22,5 +22,4 @@ func (s *Server) LongGreet(stream pb.GreetService_LongGreetServer) error{
 		}
 		response+=fmt.Sprintf("Hello %s:\n",request.FirstName)
 	}
-	return nil
 }
