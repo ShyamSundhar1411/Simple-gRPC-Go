@@ -1,2 +1,8 @@
 go.sum
 bin
+server.crt
+server.key
+server.pem
+ca.crt
+ca.key
+server.csr
