@@ -2,7 +2,7 @@ package main
 
 import (
 	"log"
-
+	"time"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/credentials/insecure"
 	pb "github.com/ShyamSundhar1411/Simple-gRPC-Go/greet/proto"
@@ -18,4 +18,5 @@ func main() {
 	defer connection.Close()
 	client := pb.NewGreetServiceClient(connection)
 	doGreetEveryone(client)
+	doGreetwithDeadline(client,5*time.Second)
 }
